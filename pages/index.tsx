@@ -20,14 +20,14 @@ export default function Home() {
   return (
     <Layout>
       <HeroSection />
-      {/* <ContactBar /> */}
+      <ContactBar />
       <AboutUs />
       <Album />
       <SocialMedia />
       <Services />
       <ContactUs />
       <Shooting />
-      {/* <WhyUs /> */}
+      <WhyUs />
     </Layout>
   )
 }
