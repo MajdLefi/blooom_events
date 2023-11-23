@@ -10,7 +10,7 @@ export default function NoticeBar() {
   const isMobileView = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
-    <AppBar position="static" sx={{backgroundColor: "#181818", height:'60px'}}>
+    <AppBar position="static" sx={{backgroundColor: "#ECE5DC",color:'black', height:'60px'}}>
       <Container>
         <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
           <Typography variant="body1">Contactez-nous sur WhatsApp : +216 51 80 08 38</Typography>

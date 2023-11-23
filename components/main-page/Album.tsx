@@ -1,37 +1,41 @@
 import Image from 'next/image'
 import { Box, Grid, Container, Typography } from '@mui/material'
 import { Button } from 'flowbite-react';
-import aboutus from '../../public/assets/imgs/aboutus.png'
+import album1 from '../../public/assets/imgs/album1.jpeg'
+import album2 from '../../public/assets/imgs/album2.jpeg'
+import album3 from '../../public/assets/imgs/album3.jpeg'
+import album4 from '../../public/assets/imgs/album4.jpeg'
+import album5 from '../../public/assets/imgs/album5.jpeg'
 export default function Album() {
   return (
     <Container className='mb-28'>
-        <Grid container spacing={2} className='mb-12'>
-  <Grid item xs={12} md={2.4} className='flex justify-center items-center'>
-    <Box sx={{ textAlign: 'center' }}>
-      <Image src={aboutus} width={320} height={410} alt='aboutus-image' loading="lazy" />
-    </Box>
-  </Grid>
-  <Grid item xs={12} md={2.4} className='flex justify-center items-center'>
-    <Box sx={{ textAlign: 'center' }}>
-      <Image src={aboutus} width={320} height={410} alt='aboutus-image' loading="lazy" />
-    </Box>
-  </Grid>
-  <Grid item xs={12} md={2.4} className='flex justify-center items-center'>
-    <Box sx={{ textAlign: 'center' }}>
-      <Image src={aboutus} width={320} height={410} alt='aboutus-image' loading="lazy" />
-    </Box>
-  </Grid>
-  <Grid item xs={12} md={2.4} className='flex justify-center items-center'>
-    <Box sx={{ textAlign: 'center' }}>
-      <Image src={aboutus} width={320} height={410} alt='aboutus-image' loading="lazy" />
-    </Box>
-  </Grid>
-  <Grid item xs={12} md={2.4} className='flex justify-center items-center'>
-    <Box sx={{ textAlign: 'center' }}>
-      <Image src={aboutus} width={320} height={410} alt='aboutus-image' loading="lazy" />
-    </Box>
-  </Grid>
-</Grid>
+      <Grid container spacing={2} className='mb-12'>
+        <Grid item xs={12} md={2.4} className='flex justify-center items-center'>
+          <Box sx={{ textAlign: 'center' }}>
+            <Image src={album1} width={320} height={410} alt='aboutus-image' loading="lazy" />
+          </Box>
+        </Grid>
+        <Grid item xs={12} md={2.4} className='flex justify-center items-center'>
+          <Box sx={{ textAlign: 'center' }}>
+            <Image src={album2} width={320} height={410} alt='aboutus-image' loading="lazy" />
+          </Box>
+        </Grid>
+        <Grid item xs={12} md={2.4} className='flex justify-center items-center'>
+          <Box sx={{ textAlign: 'center' }}>
+            <Image src={album3} width={320} height={410} alt='aboutus-image' loading="lazy" />
+          </Box>
+        </Grid>
+        <Grid item xs={12} md={2.4} className='flex justify-center items-center'>
+          <Box sx={{ textAlign: 'center' }}>
+            <Image src={album4} width={320} height={410} alt='aboutus-image' loading="lazy" />
+          </Box>
+        </Grid>
+        <Grid item xs={12} md={2.4} className='flex justify-center items-center'>
+          <Box sx={{ textAlign: 'center' }}>
+            <Image src={album5} width={320} height={410} alt='aboutus-image' loading="lazy" />
+          </Box>
+        </Grid>
+      </Grid>
 
 
       {/* <Box>

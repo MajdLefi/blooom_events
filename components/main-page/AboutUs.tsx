@@ -3,7 +3,8 @@ import Image from 'next/image'
 import { Grid, Box, Container, Typography } from '@mui/material'
 import { Button } from 'flowbite-react';
 import { Tabs } from 'flowbite-react';
-import aboutus from '../../public/assets/imgs/aboutus.png'
+// import aboutus from '../../public/assets/imgs/aboutus.png'
+import aboutus from '../../public/assets/imgs/about-us.jpeg'
 import CustomButton from '../buttons/CustomBtn';
 
 export default function AboutUs() {

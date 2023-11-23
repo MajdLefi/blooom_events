@@ -3,7 +3,9 @@ import Image from 'next/image'
 import { Grid, Box, Container, Typography } from '@mui/material'
 import { Button } from 'flowbite-react';
 import { Tabs } from 'flowbite-react';
-import aboutus from '../../../public/assets/imgs/aboutus.png'
+import shooting11 from '../../../public/assets/imgs/shooting11.jpeg'
+import shooting12 from '../../../public/assets/imgs/shooting12.jpeg'
+import shooting13 from '../../../public/assets/imgs/shooting13.jpeg'
 import CustomBtn from '../../buttons/CustomBtn'
 import CustomButton from '../../buttons/CustomBtn';
 export default function Shooting() {
@@ -14,15 +16,15 @@ export default function Shooting() {
                     <Grid container spacing={3}>
                         <Grid item xs={12} md={6}>
                             <Box sx={{ border: 'solid red 1px', height: '200px', mb: '30px' }}>
-                                {/* <Image src={aboutus} width={340} height={480} alt='aboutus-image' loading="lazy" /> */}
+                                <Image src={shooting11} width={340} height={480} alt='aboutus-image' loading="lazy" />
                             </Box>
                             <Box sx={{ border: 'solid red 1px', height: '250px' }}>
-                                {/* <Image src={aboutus} width={340} height={480} alt='aboutus-image' loading="lazy" /> */}
+                                <Image src={shooting12} width={340} height={480} alt='aboutus-image' loading="lazy" />
                             </Box>
                         </Grid>
                         <Grid item xs={12} md={6}>
                             <Box sx={{ border: 'solid red 1px', height: '480px' }}>
-                                {/* <Image src={aboutus} width={340} height={480} alt='aboutus-image' loading="lazy" /> */}
+                                <Image src={shooting13} width={340} height={480} alt='aboutus-image' loading="lazy" />
                             </Box>
                         </Grid>
                     </Grid>
