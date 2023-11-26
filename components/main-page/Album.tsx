@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import { Box, Grid, Container, Typography } from '@mui/material'
-import { Button } from 'flowbite-react';
 import album1 from '../../public/assets/imgs/album1.png'
 import album2 from '../../public/assets/imgs/album2.png'
 import album3 from '../../public/assets/imgs/album3.png'
@@ -37,7 +36,7 @@ export default function Album() {
             </Box>
           </Grid>
         </Grid>
-        <Typography sx={{textAlign:'center'}}>L'artiste a peint un portrait de sa femme. The artist painted a portrait of his wife. .L'artiste a peint un portrait de sa femme.</Typography>
+        <Typography sx={{textAlign:'center'}}>The artiste a peint un portrait de sa femme. The artist painted a portrait of his wife. .The artiste a peint un portrait de sa femme.</Typography>
       </Container>
     </Box>
   )

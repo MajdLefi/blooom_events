@@ -25,7 +25,7 @@ export default function Team() {
                         <Typography sx={{ fontSize: '50px', fontFamily: 'Inter', fontWeight: '600', }}>NOTRE  EQUIPES</Typography>
                         {/* <Typography sx={{ fontSize: '50px', fontFamily: 'Inter', fontWeight: '600', mt: '-35px', ml: '30px' }}>.Studio</Typography> */}
                         <Typography sx={{ fontSize: '25px', fontFamily: 'Inika', fontWeight: '400', mb: '30px' }}>
-                            L'artiste a peint un portrait de sa femme. The artist painted a portrait of his wife. La ville a commandé un portrait de son plus célèbre citoyen. The city commissioned a portrait of its most famous citizen.
+                            The artiste a peint un portrait de sa femme. The artist painted a portrait of his wife. La ville a commandé un portrait de son plus célèbre citoyen. The city commissioned a portrait of its most famous citizen.
                         </Typography>
                         <CustomButton buttonText="Contact us" />
                         {/* <Button color="dark" pill className='bg-black	'>About Us</Button> */}

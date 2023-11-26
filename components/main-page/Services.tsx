@@ -67,7 +67,7 @@ function Services() {
                                     <Box sx={{}}>
                                         <Image src={service2} width={524} height={651} alt='service1-image' loading="lazy" />
                                     </Box>
-                                    <Typography sx={{ fontSize: '22px', fontFamily: 'Inika' }}>L'artiste a peint un portrait de sa femme. <br />The artist painted a portrait of his wife.<br /> The city commissioned a portrait of </Typography>
+                                    <Typography sx={{ fontSize: '22px', fontFamily: 'Inika' }}>The artiste a peint un portrait de sa femme. <br />The artist painted a portrait of his wife.<br /> The city commissioned a portrait of </Typography>
                                 </Box>
                             </Grid>
                         </Grid>
