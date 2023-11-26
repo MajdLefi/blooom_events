@@ -3,28 +3,29 @@ import Image from 'next/image'
 import { Grid, Box, Container, Typography } from '@mui/material'
 import { Button } from 'flowbite-react';
 import { Tabs } from 'flowbite-react';
-import shooting11 from '../../../public/assets/imgs/shooting11.jpeg'
-import shooting12 from '../../../public/assets/imgs/shooting12.jpeg'
-import shooting13 from '../../../public/assets/imgs/shooting13.jpeg'
+import shooting11 from '../../../public/assets/imgs/shooting11.png'
+import shooting12 from '../../../public/assets/imgs/shooting22.png'
+import shooting13 from '../../../public/assets/imgs/shooting33.png'
 import CustomBtn from '../../buttons/CustomBtn'
 import CustomButton from '../../buttons/CustomBtn';
 export default function Shooting() {
     return (
-        <Container className='mb-28' sx={{ pt: '70px' }}>
-            <Grid container spacing={3}>
+        <Box className='bg-stone-50 pb-4' sx={{ pt: '70px' }}>
+        <Container>
+            <Grid container spacing={3} >
                 <Grid item xs={12} md={5} >
                     <Grid container spacing={3}>
                         <Grid item xs={12} md={6}>
-                            <Box sx={{ border: 'solid red 1px', height: '200px', mb: '30px' }}>
-                                <Image src={shooting11} width={340} height={480} alt='aboutus-image' loading="lazy" />
+                            <Box sx={{ mb: '30px' }}>
+                                <Image src={shooting11} width={282} height={391} alt='aboutus-image' loading="lazy" />
                             </Box>
-                            <Box sx={{ border: 'solid red 1px', height: '250px' }}>
-                                <Image src={shooting12} width={340} height={480} alt='aboutus-image' loading="lazy" />
+                            <Box sx={{ }}>
+                                <Image src={shooting12} width={282} height={391} alt='aboutus-image' loading="lazy" />
                             </Box>
                         </Grid>
                         <Grid item xs={12} md={6}>
-                            <Box sx={{ border: 'solid red 1px', height: '480px' }}>
-                                <Image src={shooting13} width={340} height={480} alt='aboutus-image' loading="lazy" />
+                            <Box sx={{}}>
+                                <Image src={shooting13} width={198} height={550} alt='aboutus-image' loading="lazy" />
                             </Box>
                         </Grid>
                     </Grid>
@@ -36,5 +37,6 @@ export default function Shooting() {
                 </Grid>
             </Grid>
         </Container>
+        </Box>
     )
 }

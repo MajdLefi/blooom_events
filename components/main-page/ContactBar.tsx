@@ -1,7 +1,8 @@
+import { Box } from '@mui/material'
 import React from 'react'
 
 export default function ContactBar() {
   return (
-    <div className='bg-yellow-50 text-black	mb-12'>ContactContactContactContactBarContactBarContactBarContactBarContactBarContactBarContactBarContactBarContactBarContactBarContactBarContactBarContactBarContactBarContactBar</div>
+    <Box sx={{backgroundColor:'#ECE5DC'}} className='text-black'>ContactBarContactBar</Box>
   )
 }

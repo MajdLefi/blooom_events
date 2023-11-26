@@ -23,8 +23,8 @@ export default function Home() {
       <ContactBar />
       <AboutUs />
       <Album />
-      <SocialMedia />
       <Services />
+      <SocialMedia />
       <ContactUs />
       <Shooting />
       <WhyUs />

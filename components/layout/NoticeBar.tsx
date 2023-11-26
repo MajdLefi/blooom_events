@@ -10,13 +10,13 @@ export default function NoticeBar() {
   const isMobileView = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
-    <AppBar position="static" sx={{backgroundColor: "#ECE5DC",color:'black', height:'60px'}}>
-      <Container>
+    <AppBar position="static" sx={{backgroundColor: "#ECE5DC",color:'black', height:'30px'}}>
+      <Container sx={{mt:{xs:'-12px', md:'-17px'}}}>
         <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
-          <Typography variant="body1">Contactez-nous sur WhatsApp : +216 51 80 08 38</Typography>
+          <Typography variant="body1" sx={{textAlign:'center', m:{xs:'0 auto 0 auto', md:0}, fontSize:{xs:'14px',md:'15px'}, fontWeight:'bold'}}>Contact us on WhatsApp : +216 51 80 08 38</Typography>
           <Box
             className={`flex space-x-6 ${isMobileView ? "sm:justify-end" : "justify-center"}`}
-            sx={{ position: isMobileView ? "absolute" : "static", top: 0, right: 0 }}
+            sx={{display :{xs:'none',md:'block'},  position: isMobileView ? "absolute" : "static", top: 0, right: 0 }}
           >
             <Link href="https://www.facebook.com/3WAcademyTunis/" passHref>
               <IconButton color="inherit">
@@ -41,7 +41,7 @@ export default function NoticeBar() {
           </Box>
         </Toolbar>
       </Container>
-      <Box sx={{mt:'-5px'}} className='bg-amber-100 h-2 text-amber-100'>.</Box>
+      {/* <Box sx={{mt:'-5px'}} className='bg-amber-100 h-2 text-amber-100'>.</Box> */}
     </AppBar>
   );
 }
