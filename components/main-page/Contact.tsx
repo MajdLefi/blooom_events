@@ -1,4 +1,3 @@
-'use client'
 import Image from 'next/image'
 import { Grid, Box, Container, Typography } from '@mui/material'
 import { Button } from 'flowbite-react';
@@ -38,8 +37,8 @@ export default function ContactUs() {
             </Container>
             <CustomButton buttonText='Send' />
           </Grid>
-          <Grid item xs={12} md={5} >
-            <Box sx={{ position: 'relative', width: '320px', height: '410px', ml: '30px', mt: '-30px' }}>
+          <Grid item xs={12} md={5} sx={{textAlign:'center', display:{xs:'none', md:'block'}, border:'solid red 2px'}}>
+            <Box sx={{ position: 'relative', width: '320px', height: '410px', ml: '120px', mt: '-30px' }}>
               <Box sx={{ position: 'absolute', border: 'solid #181818 1px', width: '100%', height: '95%', ml: "30px", mt: '30px' }} />
               <Box sx={{ position: 'absolute', zIndex: 99 }}>
                 <Image src={contact} width={340} height={480} alt='aboutus-image' loading="lazy" />

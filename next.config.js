@@ -9,5 +9,14 @@ module.exports = {
   plugins: [
     require("flowbite/plugin")
   ],
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'res.cloudinary.com',
+        port: '',
+      },
+    ],
+  },
   theme: {},
 };

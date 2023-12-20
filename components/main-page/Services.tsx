@@ -1,10 +1,11 @@
-import { Box, Container, Grid, Typography } from '@mui/material';
+import { Box, Container, Button, Grid, Typography } from '@mui/material';
 import { Tabs } from 'flowbite-react';
 import type { CustomFlowbiteTheme } from 'flowbite-react';
 import Image from 'next/image';
 import service1 from '../../public/assets/imgs/service1.png'
 import service2 from '../../public/assets/imgs/service2.png'
 import Team from './Team';
+import CustomButton from '../buttons/CustomBtn';
 
 const customTheme: CustomFlowbiteTheme['tab'] = {
     base: "flex flex-col gap-2",
@@ -35,11 +36,11 @@ const customTheme: CustomFlowbiteTheme['tab'] = {
     tabpanel: "py-3"
 };
 
-function Services() {
+export default function Services() {
     return (
-        <Box>
+        <Box sx={{border:'solid red 2px', backgroundColor: '#ECE5DC', }}>
             <Team />
-            <Box className='' style={{ paddingTop: '50px', backgroundColor: '#ECE5DC', display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative' }}>
+            <Box className='' sx={{ paddingTop: '50px', display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative' }}>
                 <Typography
                     variant="h3"
                     sx={{
@@ -98,29 +99,36 @@ function Services() {
                             <Box sx={{ width: '100%', height: '100%', zIndex: 99 }}>
                                 <Image src={service1} width={340} height={480} alt='service1-image' loading="lazy" />
                             </Box>
-                        </Box>                </Tabs.Item>
+                        </Box>                
+                    </Tabs.Item>
                     <Tabs.Item title="Video editing">
                         <Box>
                             <Box sx={{ width: '100%', height: '100%', zIndex: 99 }}>
                                 <Image src={service1} width={340} height={480} alt='service1-image' loading="lazy" />
                             </Box>
-                        </Box>                </Tabs.Item>
+                        </Box>                
+                    </Tabs.Item>
                     <Tabs.Item title="Reels">
                         <Box>
                             <Box sx={{ width: '100%', height: '100%', zIndex: 99 }}>
                                 <Image src={service1} width={340} height={480} alt='service1-image' loading="lazy" />
                             </Box>
-                        </Box>                </Tabs.Item>
+                        </Box>                
+                    </Tabs.Item>
                     <Tabs.Item title="Photo editing">
                         <Box>
                             <Box sx={{ width: '100%', height: '100%', zIndex: 99 }}>
                                 <Image src={service1} width={340} height={480} alt='service1-image' loading="lazy" />
                             </Box>
-                        </Box>                </Tabs.Item>
+                        </Box>                
+                    </Tabs.Item>
                 </Tabs.Group>
+            </Box>
+            <Box sx={{pt:'30px', pb:'50px', display:'flex', alignItems:'center', justifyContent:'center'}}>
+                <CustomButton buttonText="Explore more" />
             </Box>
         </Box>
     );
 }
 
-export default Services;
+

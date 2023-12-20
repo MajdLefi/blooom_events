@@ -1,5 +1,3 @@
-'use client';
-
 import { Container } from '@mui/material';
 import { Footer } from 'flowbite-react';
 import { BsDribbble, BsFacebook, BsGithub, BsInstagram, BsTwitter } from 'react-icons/bs';

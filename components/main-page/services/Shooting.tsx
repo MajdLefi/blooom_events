@@ -1,4 +1,3 @@
-'use client'
 import Image from 'next/image'
 import { Grid, Box, Container, Typography } from '@mui/material'
 import { Button } from 'flowbite-react';

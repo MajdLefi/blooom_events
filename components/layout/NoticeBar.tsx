@@ -10,7 +10,7 @@ export default function NoticeBar() {
   const isMobileView = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
-    <AppBar position="static" sx={{backgroundColor: "#ECE5DC",color:'black', height:'30px'}}>
+    <AppBar position="static" sx={{backgroundColor: "#ECE5DC", borderBottom:'solid 1px black', color:'black', height:'30px'}}>
       <Container sx={{mt:{xs:'-12px', md:'-17px'}}}>
         <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
           <Typography variant="body1" sx={{textAlign:'center', m:{xs:'0 auto 0 auto', md:0}, fontSize:{xs:'14px',md:'15px'}, fontWeight:'bold'}}>Contact us on WhatsApp : +216 51 80 08 38</Typography>

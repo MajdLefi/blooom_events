@@ -1,4 +1,3 @@
-'use client'
 import Image from 'next/image'
 import { Grid, Box, Container, Typography } from '@mui/material'
 import { Button } from 'flowbite-react';
@@ -31,7 +30,6 @@ export default function Team() {
                         {/* <Button color="dark" pill className='bg-black	'>About Us</Button> */}
                     </Grid>
                 </Grid>
-
             </Container>
         </Box>
     )

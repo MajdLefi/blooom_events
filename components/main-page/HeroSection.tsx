@@ -19,8 +19,8 @@ export default function HeroSection() {
             }}>Explore</Button>
           </Grid>
           <Grid item xs={12} md={6}>
-            <Box sx={{ textAlign: 'center' }}>
-              <Image src={herosection} width={662} height={509} alt='aboutus-image' loading="lazy" />
+            <Box sx={{ textAlign: 'center', pt:'80px', display:{xs:'none', md:'block'} }}>
+              <Image src="https://res.cloudinary.com/dtp3jjqrq/image/upload/v1703079105/blooom%20studio/aci1ehyj4mdkhg0uwdaq.png" width={662} height={509} alt='aboutus-image' loading="lazy" />
             </Box>
           </Grid>
         </Grid>

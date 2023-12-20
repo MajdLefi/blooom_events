@@ -3,6 +3,6 @@ import React from 'react'
 
 export default function ContactBar() {
   return (
-    <Box sx={{backgroundColor:'#ECE5DC'}} className='text-black'>ContactBarContactBar</Box>
+    <Box sx={{backgroundColor:'#ECE5DC', borderBottom:'solid 1px black'}} className='text-black'>ContactBarContactBar</Box>
   )
 }
