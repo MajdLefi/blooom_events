@@ -18,8 +18,8 @@ export default function SocialMedia() {
                     </Grid>
                     <Grid item xs={12} md={8.5} sx={{}} spacing={3}>
                         <Box sx={{ pt: '20px', mb: '52px' }}>
-                            <Typography variant='h2' sx={{ mb: '10px' }}>Plan your shooting with us !</Typography>
-                            <Typography variant='h5' sx={{ mb: '25px' }}>Plan your shooting with us !</Typography>
+                            <Typography variant='h2' sx={{ mb: '10px', color:'black' }}>Plan your shooting with us !</Typography>
+                            <Typography variant='h5' sx={{ mb: '25px', color:'black' }}>Plan your shooting with us !</Typography>
                             <CustomButton buttonText="Start preparing" />
                         </Box>
                         <Box sx={{ display: 'flex', }}>

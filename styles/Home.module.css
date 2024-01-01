@@ -1,0 +1,37 @@
+.tickerWrap {
+  overflow: hidden;
+  height: 2rem;
+  background-color: #ECE5DC;
+  z-index: 999;
+  box-sizing: content-box;
+  width: 100%; /* Set the width to 100% */
+}
+
+.ticker {
+  display: inline-block;
+  height: 4rem;
+  line-height: 2rem;
+  white-space: nowrap;
+  box-sizing: content-box;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: ticker;
+  animation-duration: 25s;
+}
+
+.tickerItem {
+  display: inline-block;
+  font-size: 1rem;
+  padding: 0 20rem;
+  color: black;
+}
+
+@keyframes ticker {
+  0% {
+      transform: translateX(100%);
+      visibility: visible;
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}

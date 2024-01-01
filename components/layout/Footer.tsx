@@ -1,12 +1,12 @@
 import { Container } from '@mui/material';
 import { Footer } from 'flowbite-react';
-import { BsDribbble, BsFacebook, BsGithub, BsInstagram, BsTwitter } from 'react-icons/bs';
+import { BsDribbble, BsFacebook, BsGithub, BsInstagram, BsTwitter, BsYoutube } from 'react-icons/bs';
 export default function Foooter() {
   return (
     <div>
        <Footer bgDark>
       <div className="w-full">
-        <Container>
+        {/* <Container>
         <div className="grid w-full grid-cols-2 gap-8 px-6 py-8 md:grid-cols-4">
           <div>
             <Footer.Title title="Company" />
@@ -44,15 +44,16 @@ export default function Foooter() {
             </Footer.LinkGroup>
           </div>
         </div>
-        </Container>
-        <div style={{ backgroundColor: '#181818'}} className="w-full px-4 py-6 sm:flex sm:items-center sm:justify-between">
-          <Footer.Copyright href="#" by=" Blooom.Studio" year={2023} />
+        </Container> */}
+        <div style={{ backgroundColor: '#181818'}} className="w-full text-white px-4 py-6 sm:flex sm:items-center sm:justify-between">
+        © {new Date().getFullYear()} Blooom Studio
           <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
-            <Footer.Icon href="#" icon={BsFacebook} />
-            <Footer.Icon href="#" icon={BsInstagram} />
-            <Footer.Icon href="#" icon={BsTwitter} />
+            <Footer.Icon href="https://www.facebook.com/the.blooom.studio" icon={BsFacebook} />
+            <Footer.Icon href="https://www.instagram.com/blooom.studio__/" icon={BsInstagram} />
+            <Footer.Icon href="https://www.youtube.com/@Blooom_Studio" icon={BsYoutube} />
+            {/* <Footer.Icon href="#" icon={BsTwitter} />
             <Footer.Icon href="#" icon={BsGithub} />
-            <Footer.Icon href="#" icon={BsDribbble} />
+            <Footer.Icon href="#" icon={BsDribbble} /> */}
           </div>
         </div>
       </div>

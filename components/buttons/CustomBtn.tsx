@@ -9,7 +9,7 @@ interface CustomButtonProps {
 const CustomButton: React.FC<CustomButtonProps> = ({ buttonText, }) => {
 
   return (
-    <Button color="dark" pill className='h-12 w-40 bg-white	text-zinc-950 border-l-black border-b-black border-t-black border-r-white hover:bg-black hover:text-gray-50'>
+    <Button pill className='h-12 w-40 bg-white	text-zinc-950 border-l-black border-b-black border-t-black border-r-black hover:bg-black hover:text-gray-50'>
       {buttonText}
     </Button>
   );

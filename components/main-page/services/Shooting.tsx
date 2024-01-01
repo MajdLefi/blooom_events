@@ -9,10 +9,10 @@ import CustomBtn from '../../buttons/CustomBtn'
 import CustomButton from '../../buttons/CustomBtn';
 export default function Shooting() {
     return (
-        <Box className='bg-stone-50 pb-4' sx={{ pt: '70px' }}>
+        <Box className='bg-stone-50 pb-4' sx={{  }}>
         <Container>
             <Grid container spacing={3} >
-                <Grid item xs={12} md={5} >
+                <Grid item xs={12} md={5} sx={{display:{xs:'none', md:'block'} }}>
                     <Grid container spacing={3}>
                         <Grid item xs={12} md={6}>
                             <Box sx={{ mb: '30px' }}>
@@ -29,9 +29,9 @@ export default function Shooting() {
                         </Grid>
                     </Grid>
                 </Grid>
-                <Grid item xs={12} md={7} sx={{ mt: '30px' }}>
-                    <Typography variant='h2' sx={{ mb: '30px' }}>Prenez un rendez-vous with us !</Typography>
-                    <Typography variant='h4' sx={{ mb: '30px' }}>Prenez un rendez-vous with us ! Prenez un rendez-vous with us ! Prenez un rendez-vous with us ! Prenez un rendez-vous with us !</Typography>
+                <Grid item xs={12} md={7} sx={{ mt: '30px', }}>
+                    <Typography variant='h2' sx={{ mb: '30px', color:'black' }}>Prenez un rendez-vous with us !</Typography>
+                    <Typography variant='h4' sx={{ mb: '30px', color:'black' }}>Prenez un rendez-vous with us ! Prenez un rendez-vous with us ! Prenez un rendez-vous with us ! Prenez un rendez-vous with us !</Typography>
                     <CustomButton buttonText='Send' />
                 </Grid>
             </Grid>

@@ -4,7 +4,6 @@ import type { CustomFlowbiteTheme } from 'flowbite-react';
 import Image from 'next/image';
 import service1 from '../../public/assets/imgs/service1.png'
 import service2 from '../../public/assets/imgs/service2.png'
-import Team from './Team';
 import CustomButton from '../buttons/CustomBtn';
 
 const customTheme: CustomFlowbiteTheme['tab'] = {
@@ -38,21 +37,11 @@ const customTheme: CustomFlowbiteTheme['tab'] = {
 
 export default function Services() {
     return (
-        <Box sx={{border:'solid red 2px', backgroundColor: '#ECE5DC', }}>
-            <Team />
+        <Box sx={{ backgroundColor: '#ECE5DC' }}>
             <Box className='' sx={{ paddingTop: '50px', display: 'flex', justifyContent: 'center', alignItems: 'center', position: 'relative' }}>
                 <Typography
                     variant="h3"
-                    sx={{
-                        fontWeight: 'bold',
-                        writingMode: 'vertical-lr',
-                        transform: 'rotate(180deg)',
-                        position: { md: 'absolute', xs: 'hidden' },
-                        left: { md: '100px', xl: '400px' },
-                        top: '50px',
-                        transformOrigin: 'bottom',
-                    }}
-                >
+                    sx={{ fontWeight: 'bold',color:'black', writingMode: 'vertical-lr', transform: 'rotate(180deg)', position: { md: 'absolute', xs: 'hidden' }, left: { md: '100px', xl: '400px' }, top: '50px', transformOrigin: 'bottom',}}>
                     Services
                 </Typography>
                 <Tabs.Group aria-label="Pills" style="pills" theme={customTheme}>
@@ -68,7 +57,7 @@ export default function Services() {
                                     <Box sx={{}}>
                                         <Image src={service2} width={524} height={651} alt='service1-image' loading="lazy" />
                                     </Box>
-                                    <Typography sx={{ fontSize: '22px', fontFamily: 'Inika' }}>The artiste a peint un portrait de sa femme. <br />The artist painted a portrait of his wife.<br /> The city commissioned a portrait of </Typography>
+                                    <Typography sx={{ fontSize: '22px', fontFamily: 'Inika', color:'black' }}>The artiste a peint un portrait de sa femme. <br />The artist painted a portrait of his wife.<br /> The city commissioned a portrait of </Typography>
                                 </Box>
                             </Grid>
                         </Grid>

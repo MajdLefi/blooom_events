@@ -7,17 +7,18 @@ export default function WhyUs() {
     <Box sx={{backgroundColor:'#ECE5DC', pt:'50px'}}>
     <Container>
       <Grid container spacing={2}>
-        <Grid xs={12} md={6}>
-          <Box sx={{mt:'20px'}}>
-            <Typography variant='h2' sx={{mb:'50px'}}>Why Blooom Studio !</Typography>
-            <Typography variant='h4' sx={{mb:'50px', fontWeight:'bold'}}>Profiter des packs, <br />qualité et prix exceptionnel</Typography>
-            <Typography sx={{mb:'50px'}}> Profiter des packs, qualité et prix exceptionnel qualité et prix exceptionnelProfiter des packs, qualité et prix exceptionnel qualité et prix exceptionnelProfiter des packs, qualité et prix exceptionnel qualité et prix exceptionnel</Typography>
-          </Box>
-          <Button color="dark" pill className='bg-black'>About Us</Button>
+        <Grid xs={12} md={6} sx={{mb:'50px'}}>
+          <Container sx={{mt:'20px', pt:'50px'}}>
+            <Typography variant='h2' sx={{mb:'20px', color:'black',}}>Why Blooom Studio?</Typography>
+            <Typography variant='h4' sx={{mb:'20px', color:'black', fontWeight:'bold'}}>Profiter des packs, <br />qualité et prix exceptionnel</Typography>
+            <Typography sx={{mb:'20px', color:'black'}}> Profiter des packs, qualité et prix exceptionnel qualité et prix exceptionnelProfiter des packs, qualité et prix exceptionnel qualité et prix exceptionnelProfiter des packs, qualité et prix exceptionnel qualité et prix exceptionnel</Typography>
+            <Button color="dark" pill className='bg-black'>About Us</Button>
+          </Container>
+         
         </Grid>
         <Grid xs={12} md={6}>
-          <Box>
-            <Image src={whyus} width={520} height={410} alt='aboutus-image' loading="lazy" />
+          <Box sx={{textAlign:'center', m:'0 auto 0 auto'}}>
+            <Image src={whyus} width={600} height={300} alt='aboutus-image' loading="lazy" />
           </Box>
         </Grid>
       </Grid>
