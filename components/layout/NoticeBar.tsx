@@ -4,7 +4,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-
+import YouTubeIcon from '@mui/icons-material/YouTube';
 export default function NoticeBar() {
   const theme = useTheme();
   const isMobileView = useMediaQuery(theme.breakpoints.down("sm"));
@@ -13,31 +13,31 @@ export default function NoticeBar() {
     <AppBar position="static" sx={{backgroundColor: "#ECE5DC", borderBottom:'solid 1px black', color:'black', height:'30px'}}>
       <Container sx={{mt:{xs:'-12px', md:'-17px'}}}>
         <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
-          <Typography variant="body1" sx={{textAlign:'center', m:{xs:'0 auto 0 auto', md:0}, fontSize:{xs:'14px',md:'15px'}, fontWeight:'bold'}}>Contact us on WhatsApp : +216 51 80 08 38</Typography>
+          <Typography variant="body1" sx={{textAlign:'center', m:{xs:'0 auto 0 auto', md:0}, fontSize:{xs:'12px',md:'15px'}, fontWeight:'bold'}}>Contact us on WhatsApp : +216 51 80 08 38</Typography>
           <Box
             className={`flex space-x-6 ${isMobileView ? "sm:justify-end" : "justify-center"}`}
             sx={{display :{xs:'none',md:'block'},  position: isMobileView ? "absolute" : "static", top: 0, right: 0 }}
           >
-            <Link href="https://www.facebook.com/3WAcademyTunis/" passHref>
+            <Link href="https://www.facebook.com/the.blooom.studio" passHref>
               <IconButton color="inherit">
                 <FacebookIcon />
               </IconButton>
             </Link>
-            <Link href="https://www.instagram.com/3wa_tunis/" passHref>
+            <Link href="https://www.instagram.com/blooom.studio__/" passHref>
               <IconButton color="inherit">
                 <InstagramIcon />
               </IconButton>
             </Link>
-            <Link href="https://twitter.com/3WAcademyTunis" passHref>
+            <Link href="https://www.youtube.com/@Blooom_Studio" passHref>
               <IconButton color="inherit">
-                <TwitterIcon />
+                <YouTubeIcon />
               </IconButton>
             </Link>
-            <Link href="https://www.linkedin.com/company/3w-academy-tunis" passHref>
+            {/* <Link href="https://www.linkedin.com/company/3w-academy-tunis" passHref>
               <IconButton color="inherit">
                 <LinkedInIcon />
               </IconButton>
-            </Link>
+            </Link> */}
           </Box>
         </Toolbar>
       </Container>

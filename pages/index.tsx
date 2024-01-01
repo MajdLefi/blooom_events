@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <Layout>
       <HeroSection />
-      <ContactBar />
+      {/* <ContactBar />
       <AboutUs />
       <Album />
       <Team />
@@ -29,7 +29,7 @@ export default function Home() {
       <SocialMedia />
       <ContactUs />
       <Shooting />
-      <WhyUs />
+      <WhyUs /> */}
     </Layout>
   )
 }
