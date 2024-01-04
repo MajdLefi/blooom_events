@@ -122,7 +122,7 @@ export default function ServicesMobile ()  {
                     <Box sx={{mb:'20px'}}>
                         <Image src="https://res.cloudinary.com/dtp3jjqrq/image/upload/v1704307599/blooom%20studio/pexels-cottonbro-studio-5081930_dn9hqc.jpg" width={524} height={651} alt='service1-image' loading="lazy" />
                     </Box>
-                    <Typography sx={{ fontSize: '21.5px', fontFamily: 'Inika', color:'black' }}>Social media management : Elevating your brand's digital presence, our social media <br/> management service engages, and sparks conversations </Typography>
+                    <Typography sx={{ fontSize: '21.5px', fontFamily: 'Inika', color:'black' }}>Social media management : Elevating your digital presence, our social media <br/> management service engages, and sparks conversations </Typography>
         </Box>
         <Box sx={{ width: '100%',  zIndex: 99 }}>
                     <Box sx={{mb:'20px'}}>
