@@ -72,7 +72,7 @@ export default function ServicesMobile ()  {
     prevArrow: <SliderArrow type="prev" />,
     nextArrow: <SliderArrow type="next" />,
     dots: false,
-    appendDots: (dots) => <StyledDots>{dots}</StyledDots>,
+    appendDots: (dots : any) => <StyledDots>{dots}</StyledDots>,
     customPaging: () => (
       <Box sx={{ height: 8, width: 30, backgroundColor: 'divider', display: 'inline-block', borderRadius: 4 }} />
     ),
