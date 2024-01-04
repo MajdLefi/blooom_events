@@ -8,11 +8,11 @@ import CustomButton from '../buttons/CustomBtn';
 
 export default function ContactUs() {
   return (
-    <div className='bg-stone-50 h-98 w-full'>
+    <div className='bg-stone-50 h-98 w-full pt-14 pb-14 sm:pb-0'>
       <Container sx={{ pt: '10px' }}>
         <Grid container>
-          <Grid item xs={12} md={7} sx={{ mb: { xs: '0px', md: '100px' } }}>
-            <Typography variant='h3' sx={{fontWeight:'bold', color:'black'}}>Prenez un rendez-vous with us !</Typography>
+          <Grid item xs={12} md={7} sx={{ mb: { xs: '0px', md: '40px' } }}>
+            <Typography variant='h3' sx={{fontWeight:'bold', color:'black'}}>Contact us !</Typography>
             <Container sx={{border:'solid black 1px', mb:'25px'}}>
               <div className="relative mb-3">
                 <input type="text" id="floating_filled" className="block rounded-t-lg px-2.5 pb-2.5 pt-5 w-full text-sm text-gray-900 border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-black-600 peer" placeholder=" " />
@@ -24,6 +24,12 @@ export default function ContactUs() {
                 <input type="text" id="floating_filled" className="block rounded-t-lg px-2.5 pb-2.5 pt-5 w-full text-sm text-gray-900 border-0 border-b-2 border-gray-300 appearance-none dark:focus:border-black*-500 focus:outline-none focus:ring-0 focus:border-black-600 peer" placeholder="" />
                 <label htmlFor="floating_filled" className="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-4 z-10 origin-[0] start-2.5 peer-focus:text-black-600 peer-focus:dark:text-black-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">
                   Phone
+                </label>
+              </div>
+              <div className="relative mb-3">
+                <input type="text" id="floating_filled" className="block rounded-t-lg px-2.5 pb-2.5 pt-5 w-full text-sm text-gray-900 border-0 border-b-2 border-gray-300 appearance-none dark:focus:border-black*-500 focus:outline-none focus:ring-0 focus:border-black-600 peer" placeholder="" />
+                <label htmlFor="floating_filled" className="absolute text-sm text-gray-500 duration-300 transform -translate-y-4 scale-75 top-4 z-10 origin-[0] start-2.5 peer-focus:text-black-600 peer-focus:dark:text-black-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">
+                  Email
                 </label>
               </div>
               <div className="relative mb-3">

@@ -21,6 +21,10 @@ export default function Home() {
   return (
     <Layout>
       <HeroSection />
+      <AboutUs />
+      <Services />
+      <ContactUs />
+      {/* <ContactUs /> */}
       {/* <ContactBar />
       <AboutUs />
       <Album />
