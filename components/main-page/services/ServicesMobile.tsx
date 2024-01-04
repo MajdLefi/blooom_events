@@ -9,7 +9,7 @@ import IconArrowForward from '@mui/icons-material/ArrowForward';
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
-const SliderArrow = (props) => {
+const SliderArrow = (props : any) => {
   const { onClick, type, className } = props;
   return (
     <IconButton
