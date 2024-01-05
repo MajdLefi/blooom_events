@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import dynamic from "next/dynamic";
+import Head from 'next/head'
 const Layout = dynamic(() => import("../components/layout"), { ssr: false });
 const HeroSection = dynamic(() => import("../components/main-page/HeroSection"), { ssr: false });
 const ContactBar = dynamic(() => import("../components/main-page/ContactBar"), { ssr: false });
@@ -20,6 +21,10 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
     <Layout>
+      <Head>
+        <title>Blooom Studio</title>
+        <meta name='Bloom Studio' content='Explore the creative world of Bloom Studio, where artistic vision meets digital innovation. Discover captivating designs, stunning visuals, and a unique blend of creativity and technology.' />
+      </Head>
       <HeroSection />
       <AboutUs />
       <Services />

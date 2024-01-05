@@ -1,12 +1,15 @@
 import React from "react";
 import Dynamic from "next/dynamic";
 import Box from "@mui/material/Box";
+import { Metadata } from 'next';
 
 const Header = Dynamic(() => import("./Header"), { ssr: false });
-// import Header from './header'
-
 const Foooter = Dynamic(() => import("./Footer"), { ssr: false });
-//import Footer from './footer'
+
+export const metadata: Metadata = {
+  title: 'Bloom Studio',
+  description: 'Explore the creative world of Bloom Studio, where artistic vision meets digital innovation. Discover captivating designs, stunning visuals, and a unique blend of creativity and technology.',
+};
 
 interface LayoutProps {
     children: React.ReactNode;
