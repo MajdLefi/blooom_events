@@ -48,9 +48,9 @@ export default function Foooter() {
         <div style={{ backgroundColor: '#181818'}} className="w-full text-white px-4 py-6 sm:flex sm:items-center sm:justify-between">
         © {new Date().getFullYear()} Blooom Studio
           <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
-            <Footer.Icon href="https://www.facebook.com/the.blooom.studio" icon={BsFacebook} />
-            <Footer.Icon href="https://www.instagram.com/blooom.studio__/" icon={BsInstagram} />
-            <Footer.Icon href="https://www.youtube.com/@Blooom_Studio" icon={BsYoutube} />
+            <Footer.Icon aria-label="facebook" href="https://www.facebook.com/the.blooom.studio" icon={BsFacebook} />
+            <Footer.Icon aria-label="instagram" href="https://www.instagram.com/blooom.studio__/" icon={BsInstagram} />
+            <Footer.Icon aria-label="X" href="https://www.youtube.com/@Blooom_Studio" icon={BsYoutube} />
             {/* <Footer.Icon href="#" icon={BsTwitter} />
             <Footer.Icon href="#" icon={BsGithub} />
             <Footer.Icon href="#" icon={BsDribbble} /> */}
