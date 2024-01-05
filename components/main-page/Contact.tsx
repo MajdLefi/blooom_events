@@ -1,8 +1,7 @@
 import Image from 'next/image'
+import type { GetServerSideProps } from "next";
 import { Grid, Box, Container, Typography } from '@mui/material'
-import { Button } from 'flowbite-react';
 import { Tabs } from 'flowbite-react';
-import contact from '../../public/assets/imgs/contact.png'
 import CustomBtn from '../buttons/CustomBtn'
 import CustomButton from '../buttons/CustomBtn';
 
@@ -47,7 +46,7 @@ export default function ContactUs() {
             <Box sx={{ position: 'relative', width: '320px', height: '410px', ml: '120px', mt: '-30px' }}>
               <Box sx={{ position: 'absolute', border: 'solid #181818 1px', width: '100%', height: '95%', ml: "30px", mt: '30px' }} />
               <Box sx={{ position: 'absolute', zIndex: 99 }}>
-                <Image src={contact} width={340} height={480} alt='aboutus-image' loading="lazy" />
+                <Image src="https://res.cloudinary.com/dtp3jjqrq/image/upload/v1704415364/blooom%20studio/contact_evt9k3.png" width={340} height={480} alt='aboutus-image' loading="lazy" />
               </Box>
             </Box>
           </Grid>
@@ -56,3 +55,15 @@ export default function ContactUs() {
     </div>
   )
 }
+
+export const getServerSideProps: GetServerSideProps = async (ctx) => {
+  // add Cache-Control HTTP Header to response
+  ctx.res.setHeader(
+    "Cache-Control",
+    "public, s-maxage=10, stale-while-revalidate=59"
+  );
+  return {
+    props: {
+    },
+  };
+};

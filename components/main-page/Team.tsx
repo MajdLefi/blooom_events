@@ -1,9 +1,5 @@
 import Image from 'next/image'
 import { Grid, Box, Container, Typography } from '@mui/material'
-import { Button } from 'flowbite-react';
-import { Tabs } from 'flowbite-react';
-// import aboutus from '../../public/assets/imgs/aboutus.png'
-import aboutus from '../../public/assets/imgs/about-us.png'
 import CustomButton from '../buttons/CustomBtn';
 
 export default function Team() {
@@ -15,7 +11,7 @@ export default function Team() {
                         <Box sx={{ position: 'relative', pt: '30px', width: '320px', height: '410px', ml: '20px', mt: '-30px' }}>
                             <Box sx={{ position: 'absolute', border: 'solid #181818 1px', width: '100%', height: '95%', ml: {xs:'0', md:'30px'}, mt: '-30px' }} />
                             <Box sx={{ position: 'absolute', width: '100%', height: '100%', zIndex: 99 }}>
-                                <Image src={aboutus} width={340} height={480} alt='aboutus-image' loading="lazy" />
+                                <Image src="https://res.cloudinary.com/dtp3jjqrq/image/upload/v1704415415/blooom%20studio/about-us_wkofrt.png" width={340} height={480} alt='aboutus-image' loading="lazy" />
                             </Box>
                         </Box>
                     </Grid>

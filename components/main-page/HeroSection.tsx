@@ -1,6 +1,5 @@
+import type { GetServerSideProps } from "next";
 import { Box, Button, Container,CardMedia, Grid, Typography } from '@mui/material'
-import Image from 'next/image'
-import herosection from '../../public/assets/imgs/herosection.png'
 
 export default function HeroSection() {
   return (
@@ -15,9 +14,6 @@ export default function HeroSection() {
             }}>Explore</Button>
           </Grid>
           <Grid item xs={12} md={6}>
-            {/* <Box sx={{ textAlign: 'center', pt:'80px', display:{xs:'none', md:'block'} }}>
-              <Image src="https://res.cloudinary.com/dtp3jjqrq/image/upload/v1703079105/blooom%20studio/aci1ehyj4mdkhg0uwdaq.png" width={662} height={509} alt='aboutus-image' loading="lazy" />
-            </Box> */}
             <CardMedia
             component='video'
             image={"https://res.cloudinary.com/dtp3jjqrq/video/upload/v1704300565/blooom%20studio/herosection_koszdv.mp4"}
@@ -33,3 +29,15 @@ export default function HeroSection() {
     </Box>
   )
 }
+
+export const getServerSideProps: GetServerSideProps = async (ctx) => {
+  // add Cache-Control HTTP Header to response
+  ctx.res.setHeader(
+    "Cache-Control",
+    "public, s-maxage=10, stale-while-revalidate=59"
+  );
+  return {
+    props: {
+    },
+  };
+};

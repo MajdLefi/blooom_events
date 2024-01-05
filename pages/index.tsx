@@ -12,7 +12,7 @@ const SocialMedia = dynamic(() => import("../components/main-page/SocialMedia"),
 const Shooting = dynamic(() => import("../components/main-page/services/Shooting"), { ssr: false });
 const ContactUs = dynamic(() => import("../components/main-page/Contact"), { ssr: false });
 
-import { Inter, Satisfy } from 'next/font/google'
+import { Inter } from 'next/font/google'
 
 
 const inter = Inter({ subsets: ['latin'] })

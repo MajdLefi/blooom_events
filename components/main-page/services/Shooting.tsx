@@ -1,11 +1,5 @@
 import Image from 'next/image'
 import { Grid, Box, Container, Typography } from '@mui/material'
-import { Button } from 'flowbite-react';
-import { Tabs } from 'flowbite-react';
-import shooting11 from '../../../public/assets/imgs/shooting11.png'
-import shooting12 from '../../../public/assets/imgs/shooting22.png'
-import shooting13 from '../../../public/assets/imgs/shooting33.png'
-import CustomBtn from '../../buttons/CustomBtn'
 import CustomButton from '../../buttons/CustomBtn';
 export default function Shooting() {
     return (
@@ -16,15 +10,15 @@ export default function Shooting() {
                     <Grid container spacing={3}>
                         <Grid item xs={12} md={6}>
                             <Box sx={{ mb: '30px' }}>
-                                <Image src={shooting11} width={282} height={391} alt='aboutus-image' loading="lazy" />
+                                <Image src="https://res.cloudinary.com/dtp3jjqrq/image/upload/v1704416281/blooom%20studio/shooting2_jf8qyk.png" width={282} height={391} alt='aboutus-image' loading="lazy" />
                             </Box>
                             <Box sx={{ }}>
-                                <Image src={shooting12} width={282} height={391} alt='aboutus-image' loading="lazy" />
+                                <Image src="https://res.cloudinary.com/dtp3jjqrq/image/upload/v1704416281/blooom%20studio/shooting3_ku2prj.png" width={282} height={391} alt='aboutus-image' loading="lazy" />
                             </Box>
                         </Grid>
                         <Grid item xs={12} md={6}>
                             <Box sx={{}}>
-                                <Image src={shooting13} width={198} height={550} alt='aboutus-image' loading="lazy" />
+                                <Image src="https://res.cloudinary.com/dtp3jjqrq/image/upload/v1704416281/blooom%20studio/shooting1_qmjbhv.png" width={198} height={550} alt='aboutus-image' loading="lazy" />
                             </Box>
                         </Grid>
                     </Grid>

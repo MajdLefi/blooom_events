@@ -1,7 +1,6 @@
+import Image from 'next/image'
 import { Box, Container, Grid, Typography } from '@mui/material'
 import { Button } from 'flowbite-react';
-import Image from 'next/image'
-import whyus from '../../public/assets/imgs/whyus.png'
 export default function WhyUs() {
   return (
     <Box sx={{backgroundColor:'#ECE5DC', pt:'50px'}}>
@@ -18,7 +17,7 @@ export default function WhyUs() {
         </Grid>
         <Grid xs={12} md={6}>
           <Box sx={{textAlign:'center', m:'0 auto 0 auto'}}>
-            <Image src={whyus} width={600} height={300} alt='aboutus-image' loading="lazy" />
+            <Image src="https://res.cloudinary.com/dtp3jjqrq/image/upload/v1704416281/blooom%20studio/shooting1_qmjbhv.png" width={600} height={300} alt='aboutus-image' loading="lazy" />
           </Box>
         </Grid>
       </Grid>

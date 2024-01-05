@@ -1,10 +1,8 @@
+import type { GetServerSideProps } from "next";
+import Image from 'next/image';
 import { Box, Container, Button, Grid, Typography } from '@mui/material';
 import { Tabs } from 'flowbite-react';
 import type { CustomFlowbiteTheme } from 'flowbite-react';
-import Image from 'next/image';
-import service1 from '../../public/assets/imgs/service1.png'
-import service2 from '../../public/assets/imgs/service2.png'
-import CustomButton from '../buttons/CustomBtn';
 import ServicesMobile from './services/ServicesMobile';
 
 const customTheme: CustomFlowbiteTheme['tab'] = {
@@ -179,4 +177,14 @@ export default function Services() {
     );
 }
 
-
+export const getServerSideProps: GetServerSideProps = async (ctx) => {
+    // add Cache-Control HTTP Header to response
+    ctx.res.setHeader(
+      "Cache-Control",
+      "public, s-maxage=10, stale-while-revalidate=59"
+    );
+    return {
+      props: {
+      },
+    };
+  };
