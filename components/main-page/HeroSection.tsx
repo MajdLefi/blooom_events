@@ -1,5 +1,6 @@
 import type { GetServerSideProps } from "next";
 import { Box, Button, Container,CardMedia, Grid, Typography } from '@mui/material'
+import { motion } from "framer-motion"
 
 export default function HeroSection() {
   return (
@@ -7,11 +8,19 @@ export default function HeroSection() {
       <Container>
         <Grid container>
           <Grid item xs={12} md={6} sx={{mb:{xs:'50px'}}}>
+          <motion.div animate={{ x: 0 }} transition={{ type: "spring", stiffness: 100 }}>
             <Typography sx={{pt: '80px', color: 'white', fontSize: '55px', mb: '20px',  }}>Where Creativity Blooms into Reality !</Typography>
+          </motion.div>
+            <motion.button whileTap={{ scale: 0.85 }}>
             <Button variant="contained"  sx={{'&:hover': {backgroundColor: 'white', color: 'black',}, width: '180px', height: '50px', fontSize: '18px', fontWeight: 'bold',
               textTransform: 'capitalize', borderRadius: 0,
               backgroundColor: 'white', color: 'black'
             }}>Explore</Button>
+            </motion.button>
+            {/* <Button variant="contained"  sx={{'&:hover': {backgroundColor: 'white', color: 'black',}, width: '180px', height: '50px', fontSize: '18px', fontWeight: 'bold',
+              textTransform: 'capitalize', borderRadius: 0,
+              backgroundColor: 'white', color: 'black'
+            }}>Explore</Button> */}
           </Grid>
           <Grid item xs={12} md={6}>
             <CardMedia
